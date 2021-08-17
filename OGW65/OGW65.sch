@@ -1,0 +1,102 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L keyboard_parts:ATMEGA32U4 U1
+U 1 1 5F7D139F
+P 5350 4000
+F 0 "U1" H 5375 5337 60  0000 C CNN
+F 1 "ATMEGA32U4" H 5375 5231 60  0000 C CNN
+F 2 "" H 5350 4000 60  0000 C CNN
+F 3 "" H 5350 4000 60  0000 C CNN
+	1    5350 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L keyboard_parts:XTAL_GND X1
+U 1 1 5F7D3BFB
+P 2850 4600
+F 0 "X1" H 2850 4892 60  0000 C CNN
+F 1 "XTAL_GND" H 2850 4786 60  0000 C CNN
+F 2 "" H 2850 4600 60  0000 C CNN
+F 3 "" H 2850 4600 60  0000 C CNN
+	1    2850 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 5F7D5780
+P 2300 4800
+F 0 "C1" H 2208 4754 50  0000 R CNN
+F 1 "22p" H 2208 4845 50  0000 R CNN
+F 2 "" H 2300 4800 50  0001 C CNN
+F 3 "~" H 2300 4800 50  0001 C CNN
+	1    2300 4800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 5F7D5FEA
+P 3350 4800
+F 0 "C2" H 3442 4846 50  0000 L CNN
+F 1 "22p" H 3442 4755 50  0000 L CNN
+F 2 "" H 3350 4800 50  0001 C CNN
+F 3 "~" H 3350 4800 50  0001 C CNN
+	1    3350 4800
+	1    0    0    -1  
+$EndComp
+Connection ~ 2850 5100
+Wire Wire Line
+	2850 5100 3350 5100
+Wire Wire Line
+	3350 5100 3350 4900
+Wire Wire Line
+	2850 5100 2300 5100
+Wire Wire Line
+	2300 5100 2300 4900
+Wire Wire Line
+	2850 5100 2850 5200
+$Comp
+L keyboard_parts:GND #PWR?
+U 1 1 5F7D6835
+P 2850 5200
+F 0 "#PWR?" H 2850 5250 20  0001 C CNN
+F 1 "GND" H 2850 5259 30  0000 C CNN
+F 2 "" H 2850 5200 60  0000 C CNN
+F 3 "" H 2850 5200 60  0000 C CNN
+	1    2850 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 4700 3350 4600
+Wire Wire Line
+	3350 4550 4300 4550
+Wire Wire Line
+	4300 4450 2300 4450
+Wire Wire Line
+	2300 4450 2300 4600
+Wire Wire Line
+	3150 4600 3350 4600
+Connection ~ 3350 4600
+Wire Wire Line
+	3350 4600 3350 4550
+Wire Wire Line
+	2550 4600 2300 4600
+Connection ~ 2300 4600
+Wire Wire Line
+	2300 4600 2300 4700
+Wire Wire Line
+	2850 4800 2850 5100
+$EndSCHEMATC
